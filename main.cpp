@@ -1,6 +1,11 @@
 // Roman Henson Coding 1 Spring 2026
 // Our first C++ Program
 
+// to compile, open Terminal
+// navigate to this folder with 'cd' for 'change directory'
+// use the command 'clang++ -o main main.cpp' to compile
+// and then type './main' to run the program
+
 #include <iostream>         // in cout stream, for sending text to the console.
 #include <string>           // for playerName
 
