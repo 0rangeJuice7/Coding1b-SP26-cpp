@@ -13,7 +13,7 @@ using namespace std;        // so we don't have to type "std::" all the time.
 
 // here is where we start the program
 int main() {
-    //variables at teh top is best practice
+    //variables at the top is best practice
     string playerName;          //variables use camelCase
 
     // ask the player for their name
@@ -25,7 +25,7 @@ int main() {
     // greet the player by name
     cout << "Hello " << playerName << "." << endl;
 
-    //user Control+slash to comment out lines.
+    //use Control+slash to comment out lines.
     //cout << "Hello World!" << endl;       // cout = console out, endl = end
 
     return 0;           // end the program

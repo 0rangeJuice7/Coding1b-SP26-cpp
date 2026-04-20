@@ -1,8 +1,10 @@
 // Roman Henson Coding 1 Spring 2026
 // Vectors, iterators, and algorithms
 
-// use the double-ampersand to run two commands on a single line
-// cl /EHsc vec.cpp && vec
+// to compile, open Terminal
+// navigate to this folder with 'cd' for 'change directory'
+// use the command 'clang++ -o vec vec.cpp' to compile
+// and then type './vec' to run the program
 
 #include <iostream>
 #include <string>
@@ -66,15 +68,12 @@ int main() {
                 cout << "please add a favorite movie: ";
                 string input;
                 cin >> input;
-                // cin.ignore(INT_MAX);        // fixes issues with working with cin and getline()
-                //cin.ignore(numeric_limits<streamsize>::max(), '\n');
-                //getline(cin, input);
 
                 favMovies.push_back(input);
             }
 
             cout << "Here are your favorite movies:\n";
-            // this time, use a for look with an iterator to move through the vector.
+            // use a for loop with an iterator to move through the vector.
             for(vector<string>::iterator iter = favMovies.begin(); iter != favMovies.end(); iter++) {
                 cout << *iter << endl;
             }
@@ -107,34 +106,20 @@ int main() {
             if(chosenFriend != friends.end()){
                 // displays the name of chosenFriend... if we found one...
                 cout << "Let's talk to " << *chosenFriend << " today!\n";
+
+                cout << "Let's give " << *chosenFriend << " a new name!\n";
+                cin >> input;
+                *chosenFriend = input;
+
+                cout << "Their name is now " << *chosenFriend << ".\n";
             }
             else {
                 cout << "I couldn't find " << input << " in your friends.\n";
             }
 
-            cout << "Let's give " << *chosenFriend << " a new name!\n";
-            cin >> input;
-            *chosenFriend = input;
-
-            cout << "Their name is now " << *chosenFriend << ".\n";
-
-
-            // // use an algorithm to find a friend.
-            // chosenFriend = find(friends.begin(), friends.end(), "Ross");
-
-            // // displays the name of chosenFriend... if we found one...
-            // cout << "Let's talk to " << *chosenFriend << " today!\n";
-
-        }
-        else {
-            cout << chapter << " isn't one of the options.\n";
-        }
-
+        } // end of chapter 3
         if(chapter == 4) {
-            cout << "Let's remove an element from a global vector. (well, global-ish)\n";
-
-            // DONE create a vector of strings at the top of main()
-            // show favs
+            cout << "Let's remove an element from a vector.\n";
 
             // sort alphabetically
             sort(favs.begin(), favs.end());
@@ -160,9 +145,7 @@ int main() {
                 cout << "I could not find that name in favs.\n";
             }
 
-            // use vec.erase(iter) to remove a name.
-
-        }
+        } // end of chapter 4
 
     } while (true);
 

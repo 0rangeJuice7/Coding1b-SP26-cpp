@@ -1,13 +1,12 @@
 // Roman Henson Coding 1 Spring 2026
+// Arrays, Loops, and Vectors
+    // for and foreach loops
+    // algorithms?
 
 // to compile, open Terminal
 // navigate to this folder with 'cd' for 'change directory'
 // use the command 'clang++ -o arr arr.cpp' to compile
-// and then type './main' to run the program
-
-// Arrays, Loops, and Vectors
-    // for and foreach loops
-    // algorithms?
+// and then type './arr' to run the program
 
 #include <iostream>
 #include <string>
@@ -22,7 +21,7 @@ int main() {
     cout << "Let's make some arrays!\n";
 
     // arrays cannot change their size
-    // arrays dont know where the "last index" is
+    // arrays don't know where the "last index" is
     // arrays are a list of similar variable type
     // arrays are ordered
 

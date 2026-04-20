@@ -1,4 +1,4 @@
-//Roman Henson Coding 1 Spring 2026
+// Roman Henson Coding 1 Spring 2026
 // Variables and Logic
 
 // to compile, open Terminal
@@ -7,6 +7,7 @@
 // and then type './main' to run the program
 
 #include <iostream>
+#include <string>           // for string variables
 using namespace std;
 
 int main() { 
@@ -69,10 +70,6 @@ int main() {
         cout << "happinessPercent = " << happinessPercent << ".\n";
         cout << "keepPlaying = " << keepPlaying << ".\n";
     }
-
-    
-
-
 
     return 0;
 

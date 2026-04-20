@@ -1,16 +1,14 @@
 // Roman Henson Coding 1 Spring 2026
-// Random Numbers, Switch Statements, & While Loops22
+// Random Numbers, Switch Statements, & While Loops
 
 // to compile, open Terminal
 // navigate to this folder with 'cd' for 'change directory'
 // use the command 'clang++ -o rand rand.cpp' to compile
 // and then type './rand' to run the program
 
-// Fill out the rest of the code so that it displays the words "Random Numbers" to the console then run it
-
 #include <iostream>
 #include <cstdlib>          // for srand and rand
-#include <ctime>             // for time
+#include <ctime>            // for time
 
 using namespace std;
 
@@ -45,7 +43,7 @@ int main () {
         int totalGuesses = 0;
     // start loop
     while(true) {
-        // ask for the player's guess between 1-10 (inclusive)
+        // ask for the player's guess between 1 and randomRange (inclusive)
         cout << "I'm thinking of a number between 1 and " << randomRange << ", can you guess it?\n>>";
         // get the player's guess/input
         cin >> guess;
@@ -65,7 +63,7 @@ int main () {
                 // break out of loop
                 break;
             }
-    } // if Incorrect guess, keep looping
+    } // if incorrect guess, keep looping
 
 
     return 0;
