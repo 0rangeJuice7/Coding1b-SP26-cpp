@@ -30,7 +30,6 @@ int main() {
             break;
         }
         else if(input == "add") {
-            // TODO: ask for a game name and push_back into games
             cout << "What is the game name? ";
             string gameName;
             getline(cin, gameName);
@@ -41,12 +40,12 @@ int main() {
             for(int i = 0; i < games.size(); i++) {
                 cout << i + 1 << ". " << games[i] << "\n";
             }
-            cout << "What number would you like to edit? \n";
+            cout << "What number would you like to edit?\n";
             int choice;
             cin >> choice;
             cin.ignore();
             if(choice >= 1 && choice <= games.size()) {
-                cout << "What is the new name? \n";
+                cout << "What is the new name?\n";
                 string newName;
                 getline(cin, newName);
                 games[choice - 1] = newName;
@@ -57,12 +56,11 @@ int main() {
             }
         }
         else if(input == "remove") {
-            //TODO: remove games, asks for which number, removes
             sort(games.begin(), games.end());
             for(int i = 0; i < games.size(); i++) {
                 cout << i + 1 << ". " << games[i] << "\n";
             }
-            cout << "What number would you like to remove? \n";
+            cout << "What number would you like to remove?\n";
             int choice;
             cin >> choice;
             cin.ignore();
@@ -75,7 +73,6 @@ int main() {
             }
         }
         else if(input == "show") {
-            // TODO: sort games and print each one
             sort(games.begin(), games.end());
             for(int i = 0; i < games.size(); i++) {
                 cout << i + 1 << ". " << games[i] << "\n";
